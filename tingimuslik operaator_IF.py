@@ -105,3 +105,34 @@ except:
 
 
 #Ülesanne 7
+sugu=str(input("Naine või mees?(N-naine, M-mees)"))
+if sugu=="N" or sugu=="M":
+ try:
+    if sugu=="N":
+       pikkus=float(input("Kui pikk sa oled (cm)"))
+       if pikkus<150:
+          print("Viga! Nii vähe!")
+       elif pikkus<160:
+          print("Ta on lühike")
+       elif pikkus<170:
+          print("Ta on keskmine")
+       elif pikkus<190:
+          print("Ta on pikk")
+       else:
+          print("Viga! Nii palju!")
+    elif sugu=="M":
+       pikkus=float(input("Kui pikk sa oled (cm)"))
+       if pikkus<160:
+          print("Viga! Nii vähe!")
+       elif pikkus<170:
+          print("Ta on lühike")
+       elif pikkus<180:
+          print("Ta on keskmine")
+       elif pikkus<210:
+          print("Ta on pikk")
+       else:
+          print("Viga! Nii palju!")
+ except:
+    print("Viga!")
+else:
+    print("Viga! Vale andmed!")
