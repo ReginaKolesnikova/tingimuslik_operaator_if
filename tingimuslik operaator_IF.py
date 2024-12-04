@@ -136,3 +136,5 @@ if sugu=="N" or sugu=="M":
     print("Viga!")
 else:
     print("Viga! Vale andmed!")
+
+#Ülesanne 8
